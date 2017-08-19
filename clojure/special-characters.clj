@@ -1,0 +1,6 @@
+(println "Hello" \space "World")
+(println "Hello" \newline "India")
+(println "Hello" \formfeed "Karnataka")
+(println "Hello" \return "Bangalore")
+(println "Hello" \backspace "Indiranagar")
+(println "Hello" \tab "13th Main") 
