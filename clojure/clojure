@@ -1,1 +1,0 @@
-java -cp /Users/puskulka/Downloads/clojure-1.8.0/clojure-1.8.0.jar clojure.main $1
