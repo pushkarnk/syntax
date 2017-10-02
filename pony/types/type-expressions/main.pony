@@ -32,7 +32,6 @@ class Employee
 
     fun promotion(): (((Position), U32) | None) =>   //This is the most important line in this file
                                                      //The return type is a mixture of product type, sum type and intersection type
-                                                     //Ignore the rest of the program
         if _promoted == false then
             return
         else
@@ -42,4 +41,10 @@ class Employee
                    
 actor Main
     new create(env: Env) =>
-        env.out.print("Dummy") 
+        //Two ways of deconstructing tuples
+        var x: (String, U32) = ("Hello", 123)
+        env.out.print(x._1)
+        env.out.print(x._2.string())
+        (var y, var z) = x
+        env.out.print(y)
+        env.out.print(z.string())
